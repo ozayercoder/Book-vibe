@@ -55,7 +55,7 @@ const CustomColorLabel = (props: LabelProps) => {
 const ReadBooks = () => {
   const { readBooks } = useContext(BooksContext);
   // #region Sample data
-  const data = readBooks.map((book: IBook, index: number) => {
+  const data = readBooks.map((book: IBook) => {
     return {
       name: book.bookName,
       uv: book.totalPages,
