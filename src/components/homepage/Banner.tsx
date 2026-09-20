@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import BannerImage from "@/assets/hero_img.jpg";
+import Link from "next/link";
 
 const Banner = () => {
   return (
@@ -24,10 +25,11 @@ const Banner = () => {
                 favorite read.
               </p>
             </div>
-
-            <button className="btn btn-success px-7 text-base shadow-md transition hover:scale-105">
-              View The List
-            </button>
+            <Link href="/books">
+              <button className="btn btn-success px-7 text-base shadow-md transition hover:scale-105">
+                View The List
+              </button>
+            </Link>
           </div>
 
           {/* Image */}
